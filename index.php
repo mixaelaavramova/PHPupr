@@ -1,5 +1,5 @@
 <?php
-echo "alo";
+/* echo "alo";
 echo "<br>";
 
 $username = "Mihaela";
@@ -37,3 +37,46 @@ for($i=0;$i<2;$i++)
 foreach ($assocarray as $elements) {
 	echo $elements;
 }
+*/
+
+//upr 2 02.10.2020
+
+$myNumber = 2;   // ne tolkova adekvatno ciklene
+if ($myNumber == 2) { 
+ echo "True";
+} elseif ($myNumber == 1) {
+ echo "Almost";
+} else {
+ echo "Nope";
+}
+
+echo "<br>";
+echo "<br>";
+
+$myNumber = 2;   //adekvatno ciklene
+switch ($myNumber) {
+	case $myNumber > 2;
+		echo "Greater";
+		break;
+	case $myNumber == 1;
+		echo "Equal";
+		break;
+	default:
+		echo "Nope";
+		break;
+}
+
+echo "<br>";
+echo "<br>";
+
+function modifyMyName ($myName) {   //obnovqvane na ime
+	echo "My name is ".$myName;
+	$myName = "Ivan?";
+	return $myName;
+}
+
+$myNewName = modifyMyName("Mihaela");
+echo "    My name is ".$myNewName;
+
+echo "<br>";
+echo "<br>";
